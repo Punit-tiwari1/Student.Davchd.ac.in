@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Profile — Demonstration</title>
+<style>
+:root{--blue:#073b79;--navy:#092b57;--line:#d8e0e8;--pale:#eef4fb}
+*{box-sizing:border-box}
+body{margin:0;background:#f2f5f8;color:#222;font:15px/1.45 Arial,Helvetica,sans-serif}
+.page{max-width:900px;margin:24px auto;padding:0 14px}
+.notice{background:#fff4d7;border:1px solid #e5c46b;color:#5b4715;padding:10px 13px;border-radius:6px;font-size:12px;margin-bottom:12px}
+.card{background:#fff;border:1px solid #d4dce5;box-shadow:0 3px 12px #132b4414}
+.header{display:flex;align-items:center;gap:15px;padding:20px 22px;border-bottom:3px solid var(--blue)}
+.logo{width:76px;height:76px;border:2px solid var(--blue);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--blue);font-weight:700;font-size:12px;flex-shrink:0}
+.college{flex:1;text-align:center;color:var(--navy)}
+.college h1{font-size:clamp(19px,3vw,27px);margin:0 0 5px;text-transform:uppercase;line-height:1.2}
+.college p{margin:2px 0;font-size:13px}
+.session{background:var(--blue);color:#fff;text-align:center;font-weight:700;padding:10px;font-size:16px}
+.content{padding:22px}
+.title{margin:0 0 16px;text-align:center;color:var(--navy);font-size:20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 165px;gap:20px;align-items:start}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 11px;text-align:left;vertical-align:top}
+th{background:var(--pale);width:39%;font-weight:700;color:#23384e}
+.photo{border:1px solid var(--line);padding:9px;text-align:center;background:#fafbfd}
+.student-photo{width:100%;height:170px;object-fit:cover;object-position:center top;display:block;border:1px solid #aab7c6;background:#eef1f5}
+.signature-frame{height:62px;border:1px solid #aab7c6;background:#fff;margin-top:12px;display:grid;place-items:center;overflow:hidden}
+.student-signature{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.photo p{margin:8px 0 0;font-size:12px;color:#566575}
+.status{margin-top:20px;border:1px solid var(--line);padding:12px;text-align:center;background:#f8fafc}
+.status strong{color:var(--navy)}
+.status span{display:inline-block;margin-top:5px;padding:4px 10px;border-radius:4px;background:#e8edf3;color:#36495d;font-size:12px;font-weight:700}
+.footer{text-align:center;color:#687789;font-size:11px;padding:13px;border-top:1px solid var(--line)}
+@media(max-width:620px){.page{margin:10px auto;padding:0 8px}.header{padding:14px 12px;gap:9px}.logo{width:54px;height:54px;font-size:9px}.college p{font-size:11px}.content{padding:14px 10px}.layout{grid-template-columns:1fr}.photo{max-width:190px;margin:0 auto;grid-row:1}.avatar{height:180px}th,td{padding:8px;font-size:12px}th{width:42%}}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="notice"><strong>DEMONSTRATION PAGE</strong> — Personal student-profile mockup. This is not an official college record or verification result.</div>
+  <section class="card">
+    <header class="header">
+      <div class="logo">COLLEGE<br>LOGO</div>
+      <div class="college">
+        <h1>DAV College, Chandigarh</h1>
+        <p>Sector 10, Chandigarh</p>
+        <p><strong>Student Profile</strong></p>
+      </div>
+      <div class="logo">PROFILE</div>
+    </header>
+    <div class="session">Academic Session: To be confirmed</div>
+    <div class="content">
+      <h2 class="title">Student Details</h2>
+      <div class="layout">
+        <table aria-label="Student details">
+          <tbody>
+            <tr><th>Enrolment Number</th><td>74457</td></tr>
+            <tr><th>Roll Number</th><td>2788</td></tr>
+            <tr><th>Class</th><td>M.Sc. Part-II</td></tr>
+            <tr><th>Student Name</th><td>Punit Tiwari</td></tr>
+            <tr><th>Father's Name</th><td>Raghwendra Tiwari</td></tr>
+            <tr><th>Mother's Name</th><td>Subhadra Devi</td></tr>
+            <tr><th>Mobile Number</th><td>9631434766</td></tr>
+            <tr><th>Father's Mobile Number</th><td>9888992835</td></tr>
+            <tr><th>Permanent Address</th><td>#10, Green Valley, Derabassi</td></tr>
+            <tr><th>Correspondence Address</th><td>Same as permanent address</td></tr>
+          </tbody>
+        </table>
+        <aside class="photo">
+          <img class="student-photo" src="assets/student-photo.png" alt="Student photograph">
+          <p>Student Photograph</p>
+          <div class="signature-frame">
+            <img class="student-signature" src="assets/student-signature.jpg" alt="Student signature">
+          </div>
+          <p>Signature</p>
+        </aside>
+      </div>
+      <div class="status">
+        <strong>Profile Status</strong><br>
+        <span>DEMONSTRATION ONLY — NOT VERIFIED</span>
+      </div>
+    </div>
+    <footer class="footer">Personal mockup for demonstration purposes. Not an official DAV College website or record.</footer>
+  </section>
+</main>
+</body>
+</html>
